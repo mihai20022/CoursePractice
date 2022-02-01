@@ -6,7 +6,7 @@ public class TaxCalculator {
         double tax = 50.7;
         int quantity = 10;
         double total = quantity * (price + tax);
-        System.out.println(total);
+        System.out.println("Total cost with tax is: " + total);
     }
 
 }
