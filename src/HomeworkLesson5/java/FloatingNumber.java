@@ -10,6 +10,8 @@ public class FloatingNumber {
             System.out.println("Positive and small");
         else if (number > 1_000_000)
             System.out.println("Positive and large");
+        else if (number > 1 && number <1_000_000)
+            System.out.println("Positive");
         if (number == 0 )
             System.out.println("Zero");
 
