@@ -1,4 +1,6 @@
-package HomeworkLesson9.java;
+package HomeworkLesson9.java.Area;
+
+import HomeworkLesson9.java.Area.Area;
 
 public class Rectangle {
     public static void main(String[] args) {

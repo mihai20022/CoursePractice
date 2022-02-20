@@ -15,7 +15,7 @@ public class doWhileLoop {
             System.out.println("You want to perform the operation again.Type: \n 1.stop for stop \n 2.Continue for continue");
             String stop1 = input.next();
 
-            if (stop1.equals("stop")) {
+            if (stop1.equals("1")) {
                 break;
 
             } else

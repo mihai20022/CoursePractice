@@ -1,4 +1,6 @@
-package HomeworkLesson9.java;
+package HomeworkLesson9.java.Employee;
+
+import HomeworkLesson9.java.Employee.Employee;
 
 public class Main {
     public static void main(String[] args) {
