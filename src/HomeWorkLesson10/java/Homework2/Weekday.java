@@ -11,8 +11,12 @@ public enum Weekday {
 
 
 
-    public void isWeekDay(){
-        
+    public boolean isWeekDay(){
+         return (this != Saturday || this != Sunday);
+    }
+
+    public boolean isHoliday(){
+        return (this == Saturday || this == Sunday);
     }
 
     
