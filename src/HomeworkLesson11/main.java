@@ -5,7 +5,14 @@ public class main {
 
 
         SavingsAccount savingsAccount = new SavingsAccount();
-        savingsAccount.savingsBalance();
-        savingsAccount.calculateMonthlyInterest();
+        SavingsAccount save1 = new SavingsAccount();
+        SavingsAccount save2 = new SavingsAccount();
+    //    savingsAccount.savingsBalance();
+        //   savingsAccount.calculateMonthlyInterest();
+        save1.savingsBalance();
+        save1.calculateMonthlyInterest();
+        save2.savingsBalance();
+        save2.calculateMonthlyInterest();
+
     }
 }

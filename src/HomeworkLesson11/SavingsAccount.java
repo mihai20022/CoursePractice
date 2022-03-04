@@ -9,6 +9,7 @@ public class SavingsAccount {
     int savingsBalance1;
     float annualInterest;
     float monthlyInterest;
+    float currentmonthInterest;
 
 
 
@@ -24,7 +25,10 @@ public class SavingsAccount {
     public void calculateMonthlyInterest(){
         annualInterest = savingsBalance1 * (1 + annualInterestRate/100);
         monthlyInterest = annualInterest - savingsBalance1;
-        System.out.println(monthlyInterest);
+        System.out.println("Monthly Interest - " + monthlyInterest);
+        currentmonthInterest =savingsBalance1 + monthlyInterest;
+        System.out.println("Current amount own in bank - " + currentmonthInterest);
+
 
 
     }
