@@ -4,32 +4,37 @@ import ExerciseProject.Products.Category;
 import ExerciseProject.Products.Products;
 import ExerciseProject.Stock.Stock;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Products[] availableProducts;
-        Stock[]  productsInStock ;
-        Products product1 = new Products(1, "Milk", Category.Food, "Alba", 9.5);
-        Products product2 = new Products(2, "Citroman", Category.Medicine, "Moldova Medocine", 50.4);
-        Products product3 = new Products(3, "Watch", Category.Electronics, "Darwin", 104.31);
-
-        availableProducts = new Products[]{product1, product2, product3};
+        Scanner input = new Scanner(System.in);
 
 
-        Stock stock1Product1 = new Stock(1, 1, 150, "Level 1", "11.12.2002");
-        Stock stock2Product1 = new Stock(2, 1, 78,"Level 1", "11.04.2021");
-        Stock stock1Product2 = new Stock(3, 2, 20,"Level 2", "11.04.2019");
-        Stock stock1Product3 = new Stock(4, 3, 5,"Level 3", "11.04.2015");
-        productsInStock = new Stock[]{ stock1Product1, stock1Product2, stock1Product3, stock2Product1};
+        while (true) {
+            int k;
+            System.out.println("-----------------------------------------------------------------------------------------------");
+            System.out.println("Stock management app. " +
+                    "\nPlease enter the corresponding number of the action you want to run!");
+            System.out.println(" 1. Visualise available products.");
+            System.out.println(" 2. Add new product.");
+            System.out.println(" 3. Edit an existing product.");
+            System.out.println(" 4. Visualise available stock.");
+            System.out.println(" 5. Visualise available stock for a product.");
+            System.out.println(" 6. Add stock for a product.");
+            System.out.println(" 7. Edit an existing stock.");
+            System.out.println(" 8. Delete stock.");
+            System.out.println(" 9. Check available stock.");
+            System.out.println(" 10. Add an order.");
+            System.out.println(" 11. Pick an order.");
+            System.out.println(" 12. Pick all orders.");
+            System.out.println(" 13. Print all orders.");
+            System.out.println(" 0. Exit the MAIN menu!");
+            System.out.println("-----------------------------------------------------------------------------------------------");
+            k = input.nextInt();
 
 
-
-        for (Products products:availableProducts){
-            System.out.println(products.toString());
         }
-        for (Stock stock:productsInStock){
-            System.out.println(stock.toString());
-        }
-
 
 
 
