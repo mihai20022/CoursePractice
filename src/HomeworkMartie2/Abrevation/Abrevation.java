@@ -16,12 +16,10 @@ public class Abrevation {
 
     public void SeparateString(){
         String[] words = string.split(" ");
-        for (String word : words) {
-            System.out.print(word.substring(0, 1));
+        for (int i =0; i< words.length-2;i++) {
+            System.out.print(words[i].charAt(0));
             System.out.print(".");
-            // nu inteleg cum sa pun primul cuvant sa fie abreviat. :(
-
-
+        }
         }
 
 
@@ -30,4 +28,4 @@ public class Abrevation {
 
 
 
-}
+
